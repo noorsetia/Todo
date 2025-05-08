@@ -52,3 +52,62 @@ body {
 button {
   margin-left: 5px;
 }
+
+/* Heading for Important Dates */
+h4.text-danger {
+  font-weight: bold;
+  margin-top: 30px;
+  animation: popIn 0.5s ease-in-out;
+}
+
+/* Smooth animation for title */
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Styling for the date input group */
+.input-group input[type="date"],
+.input-group input[type="text"] {
+  border: 2px solid #dee2e6;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input[type="date"]:focus,
+.input-group input[type="text"]:focus {
+  border-color: #17a2b8;
+  box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+}
+
+/* Date list styling similar to To-Do items */
+.todo-list .todo-item {
+  background-color: #fff8e1; /* light yellow background for dates */
+  border-left: 5px solid #ff9800;
+}
+
+.todo-list .todo-item span {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Hover effect */
+.todo-list .todo-item:hover {
+  background-color: #fff3cd;
+  transform: scale(1.01);
+}
+
+/* Button transition effects */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
